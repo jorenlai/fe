@@ -6,10 +6,11 @@ const StyledMenu=styled.div<{open:boolean}>`
 
     > main{
         box-shadow: inset 10 10 10px #f8a100;
-        display: ${({open})=>open?'flex':'none'};
+        display:flex;
         position: absolute;
         top:0;
-        right:0;
+        right: ${({open})=>open?'0':'-300px'};
+        transition: right .3s ease-in;
 
         width:100%;
         max-width:300px;
