@@ -1,0 +1,12 @@
+html,*,*:before,*:after {
+    box-sizing: border-box;
+}
+
+#root {
+    flex:1;
+    justify-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background:#3f438d;
+}
